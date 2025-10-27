@@ -5,7 +5,7 @@ import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
-
+// App.jsx
 function App() {
   return (
     <div className="bg-black text-white scroll-smooth">
