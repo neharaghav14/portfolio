@@ -1,38 +1,63 @@
-import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
-import About from "./components/About";
-import Skills from "./components/Skills";
-import Projects from "./components/Projects";
-import Contact from "./components/Contact";
-import Footer from "./components/Footer";
-// App.jsx
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Hero from "./pages/Hero/Hero";
+import Navbar from "./pages/Navbar/Navbar";
+import About from "./pages/About/About";
+import Skills from "./pages/Skills/Skills";
+import Projects from "./pages/Projects/Projects";
+import Contact from "./pages/Contact/Contact";
+import Footer from "./pages/Footer/Footer";
+import ProjectsDetail from "./pages/Projects/ProjectDetail";
+import ProjectsPage from "./pages/Projects/ProjectsPage";
+
 function App() {
   return (
-    <div className="bg-black text-white scroll-smooth">
-      <Navbar />
+    <Router>
+      <div className="bg-black text-white scroll-smooth">
+        <Navbar />
 
-      <section id="home">
-        <Hero />
-      </section>
+        <Routes>
+          {/* ✅ Homepage with scroll sections */}
+          <Route
+            path="/"
+            element={
+              <>
+                <section id="home">
+                  <Hero />
+                </section>
 
-      <section id="about">
-        <About />
-      </section>
+                <section id="about">
+                  <About />
+                </section>
 
-      <section id="skills">
-        <Skills />
-      </section>
+                <section id="skills">
+                  <Skills />
+                </section>
 
-      <section id="projects">
-        <Projects />
-      </section>
+                <section id="projects">
+                  <Projects />
+                </section>
 
-      <section id="contact">
-        <Contact />
-      </section>
+                <section id="contact">
+                  <Contact />
+                </section>
 
-      <Footer />
-    </div>
+                <section id="footer">
+                  <Footer />
+                </section>
+              </>
+            }
+          />
+
+          {/* ✅ All Projects page */}
+          <Route path="/projects" element={<ProjectsPage />} />
+
+          {/* ✅ Project detail page */}
+          <Route path="/projects/:slug" element={<ProjectsDetail />} />
+          {/* ✅ About page */}
+          <Route path="/about" element={<About />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
