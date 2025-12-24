@@ -1,3 +1,4 @@
+// src/App.jsx
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Hero from "./pages/Hero/Hero";
 import Navbar from "./pages/Navbar/Navbar";
@@ -16,7 +17,6 @@ function App() {
         <Navbar />
 
         <Routes>
-          {/* ✅ Homepage with scroll sections */}
           <Route
             path="/"
             element={
@@ -48,12 +48,8 @@ function App() {
             }
           />
 
-          {/* ✅ All Projects page */}
           <Route path="/projects" element={<ProjectsPage />} />
-
-          {/* ✅ Project detail page */}
           <Route path="/projects/:slug" element={<ProjectsDetail />} />
-          {/* ✅ About page */}
           <Route path="/about" element={<About />} />
         </Routes>
       </div>

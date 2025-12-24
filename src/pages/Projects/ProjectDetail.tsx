@@ -13,6 +13,13 @@ const projectDetails: any = {
     description:
       "Login, signup, reset password, email verification with Zustand.",
     live: "https://devadmin.artiluma.com/login"
+  },
+
+  "sanskrooti": {
+    title: "Sanskrooti Platform",
+    description:
+      "A cultural learning platform with quizzes, educational content and modern UI.",
+    live: "https://sanskrooti.vercel.app"
   }
 };
 
