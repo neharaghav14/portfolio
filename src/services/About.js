@@ -1,4 +1,5 @@
-const API_URL = "http://localhost:5000/about";
+// src/services/About.js
+const API_URL = "http://10.186.142.190:5000/about"; // tumhara IPv4
 
 export const getAboutData = async () => {
   try {
