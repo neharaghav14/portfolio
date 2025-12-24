@@ -15,7 +15,7 @@ function Navbar() {
     <nav className="fixed w-full z-50 bg-[#0a0e1a]/80 backdrop-blur-xl text-white shadow-lg border-b border-purple-500/10">
       <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
         <h1 className="text-2xl font-bold tracking-wide hover:scale-105 transition-transform cursor-pointer">
-          Neha<span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-purple-400">.</span>
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-purple-400">Portfolio</span>
         </h1>
 
         {/* Desktop Menu */}
