@@ -41,6 +41,7 @@ const ProjectsDetail = () => {
         href={data.live}
         className="px-5 py-2 bg-pink-600 rounded-lg"
         target="_blank"
+        rel="noopener noreferrer"  // ✅ FIXED: Security warning gone
       >
         Open Live →
       </a>
