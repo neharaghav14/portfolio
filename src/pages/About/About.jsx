@@ -62,7 +62,9 @@ export default function About() {
           <div className="md:col-span-2 space-y-4">
             <p className="text-xl text-gray-100">
               {about.name && <span className="font-semibold">{about.name}</span>}{" "}
-              {about.role && <span className="text-purple-300">– {about.role}</span>}
+              {about.role && (
+                <span className="text-purple-300">– {about.role}</span>
+              )}
             </p>
 
             <p className="text-gray-400">
@@ -74,26 +76,26 @@ export default function About() {
               )}
             </p>
 
-            {/* Description from API (optional) */}
+            {/* Description from API */}
             {about.description && (
               <p className="text-gray-300 leading-relaxed">
                 {about.description}
               </p>
             )}
 
-            {/* Extra static paragraphs to make it richer */}
             <p className="text-gray-300 leading-relaxed">
-              I enjoy turning ideas into real-world products using clean, scalable code
-              and thoughtful UI/UX. I love working with modern web technologies like
-              React, TypeScript, Node.js, and Tailwind CSS, and I am always exploring
-              better ways to structure projects and write maintainable code.
+              I enjoy turning ideas into real-world products using clean,
+              scalable code and thoughtful UI/UX. I love working with modern web
+              technologies like React, TypeScript, Node.js, and Tailwind CSS,
+              and I am always exploring better ways to structure projects and
+              write maintainable code.
             </p>
 
             <p className="text-gray-300 leading-relaxed">
-              Beyond just building features, I focus on developer experience, reusable
-              components, and smooth user flows. I enjoy debugging, refactoring, and
-              continuously improving my understanding of JavaScript, DSA, and system
-              design.
+              Beyond just building features, I focus on developer experience,
+              reusable components, and smooth user flows. I enjoy debugging,
+              refactoring, and continuously improving my understanding of
+              JavaScript, DSA, and system design.
             </p>
           </div>
 
@@ -104,8 +106,8 @@ export default function About() {
                 Current Focus
               </h3>
               <p className="text-sm text-gray-300">
-                Building full‑stack projects, improving DSA, and polishing my portfolio
-                for product‑based roles.
+                Building full‑stack projects, improving DSA, and polishing my
+                portfolio for product‑based roles.
               </p>
             </div>
 
@@ -114,8 +116,8 @@ export default function About() {
                 Tech I work with
               </h3>
               <p className="text-sm text-gray-300">
-                React, TypeScript, JavaScript, Node.js, Express, MongoDB, Tailwind CSS,
-                Git & GitHub.
+                React, TypeScript, JavaScript, Node.js, Express, MongoDB,
+                Tailwind CSS, Git & GitHub.
               </p>
             </div>
 
@@ -124,8 +126,9 @@ export default function About() {
                 What I enjoy
               </h3>
               <p className="text-sm text-gray-300">
-                Crafting clean UIs, building APIs, integrating auth flows, and turning
-                ideas around culture and learning into real applications.
+                Crafting clean UIs, building APIs, integrating auth flows, and
+                turning ideas around culture and learning into real
+                applications.
               </p>
             </div>
           </div>
@@ -146,8 +149,8 @@ export default function About() {
             <p className="text-xl font-semibold text-pink-300 mb-1">02</p>
             <h4 className="font-semibold mb-2">Backend</h4>
             <p className="text-sm text-gray-300">
-              REST APIs with Node.js and Express, MongoDB schemas, auth flows, and
-              secure data handling.
+              REST APIs with Node.js and Express, MongoDB schemas, auth flows,
+              and secure data handling.
             </p>
           </div>
 

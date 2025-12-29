@@ -1,3 +1,4 @@
+// src/services/About.js
 const API_URL = "http://localhost:5000/about";
 
 export const getAboutData = async () => {
