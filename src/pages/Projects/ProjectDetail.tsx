@@ -18,6 +18,12 @@ const projectDetails: any = {
     description:
       "A cultural learning platform with quizzes, educational content and modern UI.",
     live: "https://sanskrooti.vercel.app"
+  },
+  "santosh-saree-center": {
+    title: "Santosh Saree Center",
+    description:
+      "E-commerce website for premium silk, bridal, and party wear sarees with modern responsive design.",
+    live: "https://santoshsareecenter.com"  // Replace with actual live URL when deployed
   }
 };
 

@@ -35,7 +35,7 @@ const Projects = () => {
           </Link>
         </div>
 
-        {/* Project 3 - New Sanskrooti */}
+        {/* Project 3 - Sanskrooti */}
         <div className="p-8 bg-[#12121c] rounded-2xl border border-[#2a2a3d] hover:scale-[1.02] transition">
           <div className="text-5xl mb-4">🎭</div>
           <h3 className="text-2xl font-semibold mb-3">Sanskrooti Platform</h3>
@@ -44,6 +44,19 @@ const Projects = () => {
           </p>
 
           <Link to="/projects/sanskrooti" className="text-pink-400 font-medium">
+            View Project →
+          </Link>
+        </div>
+
+        {/* Project 4 - Santosh Saree Center */}
+        <div className="p-8 bg-[#12121c] rounded-2xl border border-[#2a2a3d] hover:scale-[1.02] transition md:col-span-3 lg:col-span-1">
+          <div className="text-5xl mb-4">👗</div>
+          <h3 className="text-2xl font-semibold mb-3">Santosh Saree Center</h3>
+          <p className="text-gray-300 mb-4">
+            Premium silk sarees, bridal & party wear e-commerce.
+          </p>
+
+          <Link to="/projects/santosh-saree-center" className="text-pink-400 font-medium">
             View Project →
           </Link>
         </div>
