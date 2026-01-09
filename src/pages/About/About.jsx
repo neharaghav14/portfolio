@@ -1,11 +1,10 @@
-// src/pages/About/About.jsx - Static version (no API)
+// src/pages/About/About.jsx
 export default function About() {
-  // Hardcoded about data
   const about = {
-    name: "Ashish",
+    name: "Neha Raghav",
     role: "Frontend Developer",
     location: "India",
-    description: "Hi! I’m Ashish, a passionate web developer who loves creating clean, scalable web experiences. I enjoy turning ideas into real-world products with modern web technologies."
+    description: "Hi! I’m Neha, a frontend developer passionate about creating clean, scalable web experiences. I enjoy turning ideas into real-world products using React, TypeScript, Node.js, and Tailwind CSS."
   };
 
   return (
@@ -22,7 +21,7 @@ export default function About() {
             </span>
           </h2>
           <p className="text-sm sm:text-base md:text-lg text-gray-400 max-w-2xl mx-auto">
-            A quick snapshot of who I am, what I do, and what I love building.
+            A quick snapshot of who I am and what I build.
           </p>
         </div>
 
@@ -52,10 +51,10 @@ export default function About() {
 
             <div className="space-y-4 text-sm sm:text-base text-gray-300">
               <p className="leading-relaxed">
-                I enjoy turning ideas into real-world products using clean, scalable code and thoughtful UI/UX. I love working with modern web technologies like React, TypeScript, Node.js, and Tailwind CSS.
+                I focus on building responsive interfaces and clean code. I enjoy working with React, TypeScript, Node.js, and Tailwind CSS to create projects that are functional and maintainable.
               </p>
               <p className="leading-relaxed">
-                Beyond just building features, I focus on developer experience, reusable components, and smooth user flows. I enjoy debugging, refactoring, and continuously improving my understanding of JavaScript, DSA, and system design.
+                I’m always learning and improving my skills by building real-world applications.
               </p>
             </div>
           </div>
@@ -67,7 +66,7 @@ export default function About() {
                 Current Focus
               </h3>
               <p className="text-xs sm:text-sm text-gray-300 leading-relaxed">
-                Building full‑stack projects, improving DSA, and polishing my portfolio for product‑based roles.
+                Improving React, TypeScript, and backend skills, while building meaningful projects.
               </p>
             </div>
 
@@ -76,7 +75,7 @@ export default function About() {
                 Tech I work with
               </h3>
               <p className="text-xs sm:text-sm text-gray-300 leading-relaxed">
-                React, TypeScript, Node.js, Express, MongoDB, Tailwind CSS, Git.
+                React, TypeScript, Node.js, Tailwind CSS, Git.
               </p>
             </div>
 
@@ -85,36 +84,9 @@ export default function About() {
                 What I enjoy
               </h3>
               <p className="text-xs sm:text-sm text-gray-300 leading-relaxed">
-                Crafting clean UIs, building APIs, and turning ideas around culture into real applications.
+                Crafting clean UIs, building APIs, and making functional web applications.
               </p>
             </div>
-          </div>
-        </div>
-
-        {/* Bottom highlights */}
-        <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6">
-          <div className="bg-[#141735] rounded-xl p-5 sm:p-6 border border-purple-500/30">
-            <p className="text-xl font-semibold text-purple-300 mb-1">01</p>
-            <h4 className="font-semibold mb-2 text-sm sm:text-base">Frontend</h4>
-            <p className="text-xs sm:text-sm text-gray-300">
-              Responsive interfaces built with React and Tailwind.
-            </p>
-          </div>
-
-          <div className="bg-[#141735] rounded-xl p-5 sm:p-6 border border-pink-500/30">
-            <p className="text-xl font-semibold text-pink-300 mb-1">02</p>
-            <h4 className="font-semibold mb-2 text-sm sm:text-base">Backend</h4>
-            <p className="text-xs sm:text-sm text-gray-300">
-              REST APIs with Node.js, Express, MongoDB schemas.
-            </p>
-          </div>
-
-          <div className="bg-[#141735] rounded-xl p-5 sm:p-6 border border-blue-500/30">
-            <p className="text-xl font-semibold text-blue-300 mb-1">03</p>
-            <h4 className="font-semibold mb-2 text-sm sm:text-base">Mindset</h4>
-            <p className="text-xs sm:text-sm text-gray-300">
-              Curious, consistent, always learning and shipping projects.
-            </p>
           </div>
         </div>
       </div>
