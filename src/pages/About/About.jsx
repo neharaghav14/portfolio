@@ -1,42 +1,12 @@
-// src/pages/About/About.jsx - Replace completely
-import { useEffect, useState } from "react";
-import { getAboutData } from "../../services/About";
-
+// src/pages/About/About.jsx - Static version (no API)
 export default function About() {
-  const [about, setAbout] = useState(null);
-  const [loading, setLoading] = useState(true);
-
-  const loadAbout = async () => {
-    try {
-      const res = await getAboutData();
-      console.log("About API:", res);
-      setAbout(res);
-    } catch (error) {
-      console.error("About fetch error:", error);
-    } finally {
-      setLoading(false);
-    }
+  // Hardcoded about data
+  const about = {
+    name: "Ashish",
+    role: "Frontend Developer",
+    location: "India",
+    description: "Hi! I’m Ashish, a passionate web developer who loves creating clean, scalable web experiences. I enjoy turning ideas into real-world products with modern web technologies."
   };
-
-  useEffect(() => {
-    loadAbout();
-  }, []);
-
-  if (loading) {
-    return (
-      <section className="min-h-screen flex justify-center items-center text-white bg-[#0e1122]">
-        <p className="text-lg text-gray-300">Loading About section...</p>
-      </section>
-    );
-  }
-
-  if (!about) {
-    return (
-      <section className="min-h-screen flex justify-center items-center text-white bg-[#0e1122]">
-        <p className="text-lg text-red-400">Failed to load About section.</p>
-      </section>
-    );
-  }
 
   return (
     <section
@@ -44,7 +14,7 @@ export default function About() {
       className="min-h-screen flex flex-col justify-center items-center px-4 sm:px-6 md:px-10 py-12 sm:py-16 md:py-20 bg-[#0e1122] text-white"
     >
       <div className="max-w-4xl w-full">
-        {/* Heading - Mobile responsive */}
+        {/* Heading */}
         <div className="text-center mb-8 sm:mb-10">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold mb-3 leading-tight">
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400">
@@ -56,9 +26,9 @@ export default function About() {
           </p>
         </div>
 
-        {/* Main content - Stack on mobile, side-by-side on desktop */}
+        {/* Main content */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-10 items-start">
-          {/* Main bio - Full width on mobile */}
+          {/* Main bio */}
           <div className="md:col-span-2 space-y-4 order-2 md:order-1">
             <p className="text-lg sm:text-xl text-gray-100 text-center md:text-left">
               {about.name && <span className="font-semibold">{about.name}</span>}{" "}
@@ -90,7 +60,7 @@ export default function About() {
             </div>
           </div>
 
-          {/* Quick info cards - Stack vertically on mobile */}
+          {/* Quick info cards */}
           <div className="space-y-4 order-1 md:order-2 flex flex-col justify-center">
             <div className="bg-[#141735] border border-purple-500/30 rounded-xl p-4 sm:p-6">
               <h3 className="text-xs sm:text-sm font-semibold text-purple-300 mb-2">
@@ -121,7 +91,7 @@ export default function About() {
           </div>
         </div>
 
-        {/* Bottom highlights - Mobile responsive grid */}
+        {/* Bottom highlights */}
         <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6">
           <div className="bg-[#141735] rounded-xl p-5 sm:p-6 border border-purple-500/30">
             <p className="text-xl font-semibold text-purple-300 mb-1">01</p>
