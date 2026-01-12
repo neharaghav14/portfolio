@@ -5,7 +5,7 @@ const projectDetails: any = {
     title: "Artiluma Admin Dashboard",
     description:
       "Admin panel for talent profiles, gigs, auditions and real-time filtering.",
-    live: "https://devadmin.artiluma.com/login"
+    live: "https://devadmin.artiluma.com/dashboard"
   },
   "auth-system": {
     title: "Authentication System",
@@ -23,7 +23,7 @@ const projectDetails: any = {
     title: "Santosh Saree Center",
     description:
       "E-commerce website for premium silk, bridal, and party wear sarees with modern responsive design.",
-    live: "https://santoshsareecenter.com"  // Replace with actual live URL when deployed
+    live: "https://santosh-saree-center.vercel.app"  // Replace with actual live URL when deployed
   }
 };
 
